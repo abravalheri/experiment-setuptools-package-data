@@ -1,0 +1,1094 @@
+:::: include_package_data=False :::: package_data=None ::::
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  ----> no MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-0
+running egg_info
+creating src/example_package.egg-info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
+copying src/example_package/example.py -> build/lib/example_package
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+running install_egg_info
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-0/dist/tmp5bhbruvd/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/example.py'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-0/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-0/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+       43  2021-10-28 20:54   example_package/example.py
+     1074  2021-10-28 22:56   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 22:56   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 22:56   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 22:56   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-10-28 22:56   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2520                     7 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-0
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-0/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ----> add MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-0
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+running install_egg_info
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-0/dist/tmpm8hjht1r/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/example.py'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-0/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-0/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+       43  2021-10-28 20:54   example_package/example.py
+     1074  2021-10-28 22:57   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 22:57   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 22:57   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 22:57   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-10-28 22:57   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2520                     7 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-0
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+creating example-package-0.0.1/src/example_package/sub-dir
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying MANIFEST.in -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/data.txt -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/example_package/sub-dir
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-0/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/MANIFEST.in
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/data.txt
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package/sub-dir/
+example-package-0.0.1/src/example_package/sub-dir/other.txt
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+:::: include_package_data=False :::: package_data={'example_package': '*.txt, sub-dir/*.txt'} ::::
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  ----> no MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-1
+running egg_info
+creating src/example_package.egg-info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
+copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/data.txt -> build/lib/example_package
+creating build/lib/example_package/sub-dir
+copying src/example_package/sub-dir/other.txt -> build/lib/example_package/sub-dir
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+running install_egg_info
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-1/dist/tmp7hr8usb9/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/data.txt'
+adding 'example_package/example.py'
+adding 'example_package/sub-dir/other.txt'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-1/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-1/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+        9  2021-10-28 22:37   example_package/data.txt
+       43  2021-10-28 20:54   example_package/example.py
+       10  2021-10-28 22:38   example_package/sub-dir/other.txt
+     1074  2021-10-28 22:58   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 22:58   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 22:58   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 22:58   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-10-28 22:58   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2705                     9 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-1
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+creating example-package-0.0.1/src/example_package/sub-dir
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/data.txt -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/example_package/sub-dir
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-1/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/data.txt
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package/sub-dir/
+example-package-0.0.1/src/example_package/sub-dir/other.txt
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ----> add MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-1
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+running install_egg_info
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-1/dist/tmp8m118gg0/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/data.txt'
+adding 'example_package/example.py'
+adding 'example_package/sub-dir/other.txt'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-1/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-1/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+        9  2021-10-28 22:37   example_package/data.txt
+       43  2021-10-28 20:54   example_package/example.py
+       10  2021-10-28 22:38   example_package/sub-dir/other.txt
+     1074  2021-10-28 22:59   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 22:59   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 22:59   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 22:59   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-10-28 22:59   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2705                     9 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-1
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+creating example-package-0.0.1/src/example_package/sub-dir
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying MANIFEST.in -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/data.txt -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/example_package/sub-dir
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-1/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/MANIFEST.in
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/data.txt
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package/sub-dir/
+example-package-0.0.1/src/example_package/sub-dir/other.txt
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+:::: include_package_data=True :::: package_data=None ::::
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  ----> no MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-2
+running egg_info
+creating src/example_package.egg-info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
+copying src/example_package/example.py -> build/lib/example_package
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+running install_egg_info
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-2/dist/tmppjj0m_zv/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/example.py'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-2/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-2/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+       43  2021-10-28 20:54   example_package/example.py
+     1074  2021-10-28 22:59   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 22:59   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 22:59   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 22:59   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-10-28 22:59   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2520                     7 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-2
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-2/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ----> add MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-2
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+copying src/example_package/data.txt -> build/lib/example_package
+creating build/lib/example_package/sub-dir
+copying src/example_package/sub-dir/other.txt -> build/lib/example_package/sub-dir
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+running install_egg_info
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-2/dist/tmp_0a95nj6/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/data.txt'
+adding 'example_package/example.py'
+adding 'example_package/sub-dir/other.txt'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-2/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-2/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+        9  2021-10-28 22:37   example_package/data.txt
+       43  2021-10-28 20:54   example_package/example.py
+       10  2021-10-28 22:38   example_package/sub-dir/other.txt
+     1074  2021-10-28 23:00   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 23:00   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 23:00   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 23:00   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-10-28 23:00   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2705                     9 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-2
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+creating example-package-0.0.1/src/example_package/sub-dir
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying MANIFEST.in -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/data.txt -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/example_package/sub-dir
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-2/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/MANIFEST.in
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/data.txt
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package/sub-dir/
+example-package-0.0.1/src/example_package/sub-dir/other.txt
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+:::: include_package_data=True :::: package_data={'example_package': '*.txt, sub-dir/*.txt'} ::::
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  ----> no MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-3
+running egg_info
+creating src/example_package.egg-info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
+copying src/example_package/example.py -> build/lib/example_package
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+copying src/example_package/data.txt -> build/lib/example_package
+creating build/lib/example_package/sub-dir
+copying src/example_package/sub-dir/other.txt -> build/lib/example_package/sub-dir
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+running install_egg_info
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-3/dist/tmpwji15430/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/data.txt'
+adding 'example_package/example.py'
+adding 'example_package/sub-dir/other.txt'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-3/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-3/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+        9  2021-10-28 22:37   example_package/data.txt
+       43  2021-10-28 20:54   example_package/example.py
+       10  2021-10-28 22:38   example_package/sub-dir/other.txt
+     1074  2021-10-28 23:01   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 23:01   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 23:01   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 23:01   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-10-28 23:01   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2705                     9 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-3
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-3/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ----> add MANIFEST.in
+$ .venv/bin/python -m build --wheel /tmp/tmp2azuzmoh/example-3
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+running install_egg_info
+Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
+creating '/tmp/tmp2azuzmoh/example-3/dist/tmp_nxjcgso/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'example_package/__init__.py'
+adding 'example_package/data.txt'
+adding 'example_package/example.py'
+adding 'example_package/sub-dir/other.txt'
+adding 'example_package-0.0.1.dist-info/LICENSE'
+adding 'example_package-0.0.1.dist-info/METADATA'
+adding 'example_package-0.0.1.dist-info/WHEEL'
+adding 'example_package-0.0.1.dist-info/top_level.txt'
+adding 'example_package-0.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for wheel...
+* Installing packages in isolated environment... (wheel)
+* Building wheel...
+Successfully built example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmp2azuzmoh/example-3/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmp2azuzmoh/example-3/dist/example_package-0.0.1-py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2021-10-28 20:54   example_package/__init__.py
+        9  2021-10-28 22:37   example_package/data.txt
+       43  2021-10-28 20:54   example_package/example.py
+       10  2021-10-28 22:38   example_package/sub-dir/other.txt
+     1074  2021-10-28 23:02   example_package-0.0.1.dist-info/LICENSE
+      708  2021-10-28 23:02   example_package-0.0.1.dist-info/METADATA
+       92  2021-10-28 23:02   example_package-0.0.1.dist-info/WHEEL
+       16  2021-10-28 23:02   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-10-28 23:02   example_package-0.0.1.dist-info/RECORD
+---------                     -------
+     2705                     9 files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ .venv/bin/python -m build --sdist /tmp/tmp2azuzmoh/example-3
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/example_package.egg-info/PKG-INFO
+writing dependency_links to src/example_package.egg-info/dependency_links.txt
+writing top-level names to src/example_package.egg-info/top_level.txt
+reading manifest file 'src/example_package.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'src/example_package.egg-info/SOURCES.txt'
+running check
+creating example-package-0.0.1
+creating example-package-0.0.1/src
+creating example-package-0.0.1/src/example_package
+creating example-package-0.0.1/src/example_package.egg-info
+creating example-package-0.0.1/src/example_package/sub-dir
+copying files to example-package-0.0.1...
+copying LICENSE -> example-package-0.0.1
+copying MANIFEST.in -> example-package-0.0.1
+copying README.md -> example-package-0.0.1
+copying pyproject.toml -> example-package-0.0.1
+copying setup.cfg -> example-package-0.0.1
+copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/data.txt -> example-package-0.0.1/src/example_package
+copying src/example_package/example.py -> example-package-0.0.1/src/example_package
+copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/example_package/sub-dir
+Writing example-package-0.0.1/setup.cfg
+Creating tar archive
+removing 'example-package-0.0.1' (and everything under it)
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (setuptools>=42, wheel)
+* Getting dependencies for sdist...
+* Building sdist...
+Successfully built example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmp2azuzmoh/example-3/dist/example-package-0.0.1.tar.gz
+example-package-0.0.1/
+example-package-0.0.1/LICENSE
+example-package-0.0.1/MANIFEST.in
+example-package-0.0.1/PKG-INFO
+example-package-0.0.1/README.md
+example-package-0.0.1/pyproject.toml
+example-package-0.0.1/setup.cfg
+example-package-0.0.1/src/
+example-package-0.0.1/src/example_package/
+example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/data.txt
+example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package/sub-dir/
+example-package-0.0.1/src/example_package/sub-dir/other.txt
+example-package-0.0.1/src/example_package.egg-info/
+example-package-0.0.1/src/example_package.egg-info/PKG-INFO
+example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
+example-package-0.0.1/src/example_package.egg-info/dependency_links.txt
+example-package-0.0.1/src/example_package.egg-info/top_level.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
