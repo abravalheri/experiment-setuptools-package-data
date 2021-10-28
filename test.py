@@ -1,12 +1,11 @@
 import io
-import sys
 import shutil
+import subprocess
+import sys
 from configparser import ConfigParser
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Iterable
-import subprocess
-
 
 BASE = Path(__file__).parent / "base"
 
@@ -33,7 +32,7 @@ def setupcfg():
 
 
 def run(cmd):
-    print("$", ' '.join(cmd), flush=True)
+    print("$", " ".join(cmd), flush=True)
     subprocess.run(cmd)
 
 
@@ -41,7 +40,6 @@ MANIFEST = """\
 global-include *.py *.txt
 global-exclude *.py[cod]
 """
-
 
 
 with TemporaryDirectory() as tmpdir:
