@@ -74,7 +74,7 @@ The following table summarises the results (that can be found in the
 +----------------------+--------------+-------------+------------+--------------+
 
 
-We can derive a logic expression for this table using a 3-variable `Karnaugh
+We can derive a logic expression for this table using 3-variable `Karnaugh
 maps`_ for each one of the types of distributions. According to the notation:
 
 :a: ``setup.cfg`` contains ``include_package_data=True``
@@ -92,11 +92,15 @@ maps`_ for each one of the types of distributions. According to the notation:
 
 Therefore we can conclude that:
 
-- In wheels, "data files" will be included if ``package_data`` includes them
-  **OR** ``include_package_data=True`` **AND** ``MANIFEST.in`` includes them.
-- In sdists, "data files" will be includes if ``MANIFEST.in`` includes them
-  **OR** ``include_package_data=False`` (or not present) **AND**
-  ``package_data`` includes them.
+- In wheels, "data files" will be included in the distribution if:
+
+  - ``package_data`` includes them **OR**
+  - ``include_package_data=True`` **AND** ``MANIFEST.in`` includes them.
+
+- In sdists, "data files" will be included in the distribution if:
+
+  - ``MANIFEST.in`` includes them **OR**
+  - ``include_package_data=False`` (or not present) **AND** ``package_data`` includes them.
 
 
 .. note:: The expression "data files" is used in a loose sense, meaning
