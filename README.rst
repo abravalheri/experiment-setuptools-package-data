@@ -167,6 +167,14 @@ test with different versions.
 The experiment was created and executed on Ubuntu 18.04.5 LTS with Python 3.8.0.
 
 
+Final Notes
+===========
+
+Please notice that, as any work, the experiment presented here is subject to
+errors. If you notice anything wrong, please go ahead open an issue or pull
+request. Any review is appreciated.
+
+
 .. _setuptools: https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
 .. _packaging tutorial: https://packaging.python.org/tutorials/packaging-projects/
 .. _Karnaugh maps: https://en.wikipedia.org/wiki/Karnaugh_map
