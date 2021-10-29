@@ -153,8 +153,8 @@ inside directories that are not valid Python packages (e.g. missing
 Also have in mind that "data files" outside the package directory are no longer
 allowed [#doc2]_.
 
-.. [#doc1] `https://setuptools.pypa.io/en/latest/userguide/datafiles.html`_
-.. [#doc2] `https://setuptools.pypa.io/en/latest/userguide/datafiles.html#non-package-data-files`_
+.. [#doc1] https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+.. [#doc2] https://setuptools.pypa.io/en/latest/userguide/datafiles.html#non-package-data-files
 
 
 Reproducibility
