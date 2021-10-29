@@ -1,0 +1,162 @@
+[
+  {
+    "include_package_data": false,
+    "exclude_package_data": null,
+    "package_data": null,
+    "MANIFEST.in": null,
+    "wheel": false,
+    "sdist": false
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": null,
+    "package_data": null,
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": false,
+    "sdist": true
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": null,
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": null,
+    "wheel": true,
+    "sdist": true
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": null,
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": true,
+    "sdist": true
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": null,
+    "MANIFEST.in": null,
+    "wheel": false,
+    "sdist": false
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": null,
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": false,
+    "sdist": true
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": null,
+    "wheel": false,
+    "sdist": false
+  },
+  {
+    "include_package_data": false,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": false,
+    "sdist": true
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": null,
+    "package_data": null,
+    "MANIFEST.in": null,
+    "wheel": false,
+    "sdist": false
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": null,
+    "package_data": null,
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": true,
+    "sdist": true
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": null,
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": null,
+    "wheel": true,
+    "sdist": false
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": null,
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": true,
+    "sdist": true
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": null,
+    "MANIFEST.in": null,
+    "wheel": false,
+    "sdist": false
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": null,
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": false,
+    "sdist": true
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": null,
+    "wheel": false,
+    "sdist": false
+  },
+  {
+    "include_package_data": true,
+    "exclude_package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "package_data": {
+      "example_package": "*.txt, sub-dir/*.txt"
+    },
+    "MANIFEST.in": "global-include *.py *.txt\nglobal-exclude *.py[cod]\n",
+    "wheel": false,
+    "sdist": true
+  }
+]
