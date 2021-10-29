@@ -6,7 +6,7 @@ behaviour of the configuration of setuptools_, specifically the ``package_data``
 and ``include_package_data`` fields.
 
 The folder ``base`` contains a dummy Python package structure based on the
-`packaging tutorial`_, with some "data files" [#data-files]_ added::
+`packaging tutorial`_, with some "data files" [#datafiles]_ added::
 
     base
     ├── LICENSE
