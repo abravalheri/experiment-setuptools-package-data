@@ -103,7 +103,7 @@
     },
     "MANIFEST.in": null,
     "wheel": true,
-    "sdist": false
+    "sdist": true
   },
   {
     "include_package_data": true,

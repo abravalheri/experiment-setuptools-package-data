@@ -3,7 +3,7 @@
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-0
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-0
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -19,16 +19,16 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 installing to build/bdist.linux-x86_64/wheel
 running install
 running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -41,7 +41,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-0/dist/tmp472bgs_c/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-0/dist/tmp97xcjew6/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -50,30 +50,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-0/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-0/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-0/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-0/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:39   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:39   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:39   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:39   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:39   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:25   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:25   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:25   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:25   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:25   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-0
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-0
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -108,13 +108,13 @@ copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-0/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-0/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -134,7 +134,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-0
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-0
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -151,8 +151,8 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -166,7 +166,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-0/dist/tmp034tfhnv/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-0/dist/tmpd94_3r39/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -175,30 +175,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-0/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-0/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-0/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-0/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:39   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:39   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:39   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:39   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:39   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:26   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:26   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:26   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:26   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:26   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-0
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-0
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -239,13 +239,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-0/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-0/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -277,7 +277,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-1
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-1
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -293,8 +293,8 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/data.txt -> build/lib/example_package
 creating build/lib/example_package/sub-dir
 copying src/example_package/sub-dir/other.txt -> build/lib/example_package/sub-dir
@@ -304,11 +304,11 @@ running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
 creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
 copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -321,7 +321,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-1/dist/tmpowfxpphg/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-1/dist/tmp3ejuc1z7/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/data.txt'
 adding 'example_package/example.py'
@@ -332,32 +332,32 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-1/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-1/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-1/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-1/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-        9  2021-10-28 22:37   example_package/data.txt
-       43  2021-10-28 20:54   example_package/example.py
-       10  2021-10-28 22:38   example_package/sub-dir/other.txt
-     1074  2021-10-29 11:40   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:40   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:40   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:40   example_package-0.0.1.dist-info/top_level.txt
-      753  2021-10-29 11:40   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+        9  2021-11-19 19:16   example_package/data.txt
+       43  2021-11-19 19:16   example_package/example.py
+       10  2021-11-19 19:16   example_package/sub-dir/other.txt
+     1074  2021-11-21 22:26   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:26   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:26   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:26   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-11-21 22:26   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2705                     9 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-1
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-1
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -395,13 +395,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-1/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-1/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -424,7 +424,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-1
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-1
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -441,11 +441,11 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
 creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
 copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -459,7 +459,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-1/dist/tmpshq_r8t6/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-1/dist/tmpqxvkfj8w/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/data.txt'
 adding 'example_package/example.py'
@@ -470,32 +470,32 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-1/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-1/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-1/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-1/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-        9  2021-10-28 22:37   example_package/data.txt
-       43  2021-10-28 20:54   example_package/example.py
-       10  2021-10-28 22:38   example_package/sub-dir/other.txt
-     1074  2021-10-29 11:41   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:41   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:41   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:41   example_package-0.0.1.dist-info/top_level.txt
-      753  2021-10-29 11:41   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+        9  2021-11-19 19:16   example_package/data.txt
+       43  2021-11-19 19:16   example_package/example.py
+       10  2021-11-19 19:16   example_package/sub-dir/other.txt
+     1074  2021-11-21 22:27   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:27   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:27   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:27   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-11-21 22:27   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2705                     9 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-1
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-1
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -536,13 +536,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-1/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-1/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -574,7 +574,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-2
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-2
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -590,16 +590,16 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 installing to build/bdist.linux-x86_64/wheel
 running install
 running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -612,7 +612,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-2/dist/tmp7l8gclpx/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-2/dist/tmp0hr388y9/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -621,30 +621,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-2/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-2/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-2/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-2/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:42   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:42   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:42   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:42   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:42   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:27   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:27   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:27   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:27   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:27   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-2
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-2
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -679,13 +679,13 @@ copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-2/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-2/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -705,7 +705,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-2
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-2
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -722,8 +722,8 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -737,7 +737,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-2/dist/tmp2kux4ahg/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-2/dist/tmpua9u5lfx/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -746,30 +746,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-2/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-2/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-2/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-2/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:43   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:43   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:43   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:43   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:43   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:27   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:27   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:27   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:27   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:27   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-2
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-2
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -810,13 +810,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-2/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-2/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -848,7 +848,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-3
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-3
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -864,16 +864,16 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 installing to build/bdist.linux-x86_64/wheel
 running install
 running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -886,7 +886,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-3/dist/tmp99fapa78/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-3/dist/tmpbofqtp5e/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -895,30 +895,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-3/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-3/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-3/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-3/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:43   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:43   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:43   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:43   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:43   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:28   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:28   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:28   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:28   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:28   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-3
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-3
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -953,13 +953,13 @@ copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-3/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-3/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -979,7 +979,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-3
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-3
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -996,8 +996,8 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
@@ -1011,7 +1011,7 @@ Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_p
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-3/dist/tmpovayn6s9/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-3/dist/tmpm2wb6lmd/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -1020,30 +1020,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-3/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-3/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-3/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-3/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:44   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:44   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:44   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:44   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:44   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:28   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:28   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:28   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:28   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:28   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-3
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-3
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1084,13 +1084,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-3/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-3/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -1122,7 +1122,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-4
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-4
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -1138,8 +1138,8 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1153,14 +1153,14 @@ running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-4/dist/tmpfny0trqt/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-4/dist/tmpre0tf1rr/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -1169,30 +1169,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-4/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-4/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-4/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-4/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:45   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:45   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:45   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:45   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:45   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:29   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:29   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:29   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:29   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:29   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-4
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-4
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1227,13 +1227,13 @@ copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-4/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-4/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -1253,7 +1253,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-4
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-4
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1281,17 +1281,17 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
 creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
 copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-4/dist/tmpv6kza34j/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-4/dist/tmp34djm24_/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/data.txt'
 adding 'example_package/example.py'
@@ -1302,32 +1302,32 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-4/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-4/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-4/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-4/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-        9  2021-10-28 22:37   example_package/data.txt
-       43  2021-10-28 20:54   example_package/example.py
-       10  2021-10-28 22:38   example_package/sub-dir/other.txt
-     1074  2021-10-29 11:45   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:45   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:45   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:45   example_package-0.0.1.dist-info/top_level.txt
-      753  2021-10-29 11:45   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+        9  2021-11-19 19:16   example_package/data.txt
+       43  2021-11-19 19:16   example_package/example.py
+       10  2021-11-19 19:16   example_package/sub-dir/other.txt
+     1074  2021-11-21 22:29   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:29   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:29   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:29   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-11-21 22:29   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2705                     9 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-4
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-4
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1368,13 +1368,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-4/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-4/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -1406,7 +1406,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-5
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-5
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -1422,8 +1422,8 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1440,17 +1440,17 @@ running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
 creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
 copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-5/dist/tmp9ts3d8sd/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-5/dist/tmpvhmnoegs/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/data.txt'
 adding 'example_package/example.py'
@@ -1461,32 +1461,32 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-5/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-5/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-5/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-5/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-        9  2021-10-28 22:37   example_package/data.txt
-       43  2021-10-28 20:54   example_package/example.py
-       10  2021-10-28 22:38   example_package/sub-dir/other.txt
-     1074  2021-10-29 11:46   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:46   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:46   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:46   example_package-0.0.1.dist-info/top_level.txt
-      753  2021-10-29 11:46   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+        9  2021-11-19 19:16   example_package/data.txt
+       43  2021-11-19 19:16   example_package/example.py
+       10  2021-11-19 19:16   example_package/sub-dir/other.txt
+     1074  2021-11-21 22:30   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:30   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:30   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:30   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-11-21 22:30   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2705                     9 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-5
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-5
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1507,27 +1507,30 @@ creating example-package-0.0.1
 creating example-package-0.0.1/src
 creating example-package-0.0.1/src/example_package
 creating example-package-0.0.1/src/example_package.egg-info
+creating example-package-0.0.1/src/example_package/sub-dir
 copying files to example-package-0.0.1...
 copying LICENSE -> example-package-0.0.1
 copying README.md -> example-package-0.0.1
 copying pyproject.toml -> example-package-0.0.1
 copying setup.cfg -> example-package-0.0.1
 copying src/example_package/__init__.py -> example-package-0.0.1/src/example_package
+copying src/example_package/data.txt -> example-package-0.0.1/src/example_package
 copying src/example_package/example.py -> example-package-0.0.1/src/example_package
 copying src/example_package.egg-info/PKG-INFO -> example-package-0.0.1/src/example_package.egg-info
 copying src/example_package.egg-info/SOURCES.txt -> example-package-0.0.1/src/example_package.egg-info
 copying src/example_package.egg-info/dependency_links.txt -> example-package-0.0.1/src/example_package.egg-info
 copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/example_package.egg-info
+copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/example_package/sub-dir
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-5/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-5/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -1537,7 +1540,10 @@ example-package-0.0.1/setup.cfg
 example-package-0.0.1/src/
 example-package-0.0.1/src/example_package/
 example-package-0.0.1/src/example_package/__init__.py
+example-package-0.0.1/src/example_package/data.txt
 example-package-0.0.1/src/example_package/example.py
+example-package-0.0.1/src/example_package/sub-dir/
+example-package-0.0.1/src/example_package/sub-dir/other.txt
 example-package-0.0.1/src/example_package.egg-info/
 example-package-0.0.1/src/example_package.egg-info/PKG-INFO
 example-package-0.0.1/src/example_package.egg-info/SOURCES.txt
@@ -1547,7 +1553,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-5
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-5
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1572,17 +1578,17 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/data.txt -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
 creating build/bdist.linux-x86_64/wheel/example_package/sub-dir
 copying build/lib/example_package/sub-dir/other.txt -> build/bdist.linux-x86_64/wheel/example_package/sub-dir
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-5/dist/tmppdv4e330/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-5/dist/tmp_hhbbqsa/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/data.txt'
 adding 'example_package/example.py'
@@ -1593,32 +1599,32 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-5/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-5/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-5/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-5/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-        9  2021-10-28 22:37   example_package/data.txt
-       43  2021-10-28 20:54   example_package/example.py
-       10  2021-10-28 22:38   example_package/sub-dir/other.txt
-     1074  2021-10-29 11:47   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:47   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:47   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:47   example_package-0.0.1.dist-info/top_level.txt
-      753  2021-10-29 11:47   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+        9  2021-11-19 19:16   example_package/data.txt
+       43  2021-11-19 19:16   example_package/example.py
+       10  2021-11-19 19:16   example_package/sub-dir/other.txt
+     1074  2021-11-21 22:30   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:30   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:30   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:30   example_package-0.0.1.dist-info/top_level.txt
+      753  2021-11-21 22:30   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2705                     9 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-5
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-5
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1659,13 +1665,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-5/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-5/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -1697,7 +1703,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-6
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-6
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -1713,8 +1719,8 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1728,14 +1734,14 @@ running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-6/dist/tmp73y_x_7y/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-6/dist/tmpas2yg23x/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -1744,30 +1750,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-6/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-6/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-6/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-6/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:47   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:47   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:47   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:47   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:47   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:31   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:31   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:31   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:31   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:31   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-6
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-6
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1802,13 +1808,13 @@ copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-6/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-6/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -1828,7 +1834,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-6
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-6
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1853,14 +1859,14 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-6/dist/tmpmbv37jpf/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-6/dist/tmpdfunbiby/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -1869,30 +1875,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-6/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-6/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-6/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-6/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:48   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:48   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:48   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:48   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:48   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:31   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:31   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:31   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:31   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:31   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-6
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-6
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -1933,13 +1939,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-6/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-6/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -1971,7 +1977,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
   ----> no MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-7
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-7
 running egg_info
 creating src/example_package.egg-info
 writing src/example_package.egg-info/PKG-INFO
@@ -1987,8 +1993,8 @@ running build_py
 creating build
 creating build/lib
 creating build/lib/example_package
-copying src/example_package/__init__.py -> build/lib/example_package
 copying src/example_package/example.py -> build/lib/example_package
+copying src/example_package/__init__.py -> build/lib/example_package
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -2002,14 +2008,14 @@ running install_lib
 creating build/bdist.linux-x86_64
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-7/dist/tmp13ql_6hp/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-7/dist/tmp6rr28plx/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -2018,30 +2024,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-7/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-7/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-7/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-7/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:49   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:49   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:49   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:49   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:49   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:31   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:31   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:31   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:31   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:31   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-7
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-7
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -2076,13 +2082,13 @@ copying src/example_package.egg-info/top_level.txt -> example-package-0.0.1/src/
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-7/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-7/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/PKG-INFO
@@ -2102,7 +2108,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ----> add MANIFEST.in
 
-$ .venv/bin/python -m build --wheel /tmp/tmpxlsv7t03/example-7
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --wheel /tmp/tmphv_g937f/example-7
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -2127,14 +2133,14 @@ running install
 running install_lib
 creating build/bdist.linux-x86_64/wheel
 creating build/bdist.linux-x86_64/wheel/example_package
-copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 copying build/lib/example_package/example.py -> build/bdist.linux-x86_64/wheel/example_package
+copying build/lib/example_package/__init__.py -> build/bdist.linux-x86_64/wheel/example_package
 running install_egg_info
 Copying src/example_package.egg-info to build/bdist.linux-x86_64/wheel/example_package-0.0.1-py3.8.egg-info
 running install_scripts
 adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
 creating build/bdist.linux-x86_64/wheel/example_package-0.0.1.dist-info/WHEEL
-creating '/tmp/tmpxlsv7t03/example-7/dist/tmpz8va23xx/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+creating '/tmp/tmphv_g937f/example-7/dist/tmpdhap8lko/example_package-0.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
 adding 'example_package/__init__.py'
 adding 'example_package/example.py'
 adding 'example_package-0.0.1.dist-info/LICENSE'
@@ -2143,30 +2149,30 @@ adding 'example_package-0.0.1.dist-info/WHEEL'
 adding 'example_package-0.0.1.dist-info/top_level.txt'
 adding 'example_package-0.0.1.dist-info/RECORD'
 removing build/bdist.linux-x86_64/wheel
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for wheel...
 * Installing packages in isolated environment... (wheel)
 * Building wheel...
 Successfully built example_package-0.0.1-py3-none-any.whl
 
-$ unzip -l /tmp/tmpxlsv7t03/example-7/dist/example_package-0.0.1-py3-none-any.whl
-Archive:  /tmp/tmpxlsv7t03/example-7/dist/example_package-0.0.1-py3-none-any.whl
+$ unzip -l /tmp/tmphv_g937f/example-7/dist/example_package-0.0.1-py3-none-any.whl
+Archive:  /tmp/tmphv_g937f/example-7/dist/example_package-0.0.1-py3-none-any.whl
   Length      Date    Time    Name
 ---------  ---------- -----   ----
-        0  2021-10-28 20:54   example_package/__init__.py
-       43  2021-10-28 20:54   example_package/example.py
-     1074  2021-10-29 11:50   example_package-0.0.1.dist-info/LICENSE
-      708  2021-10-29 11:50   example_package-0.0.1.dist-info/METADATA
-       92  2021-10-29 11:50   example_package-0.0.1.dist-info/WHEEL
-       16  2021-10-29 11:50   example_package-0.0.1.dist-info/top_level.txt
-      587  2021-10-29 11:50   example_package-0.0.1.dist-info/RECORD
+        0  2021-11-19 19:16   example_package/__init__.py
+       43  2021-11-19 19:16   example_package/example.py
+     1074  2021-11-21 22:32   example_package-0.0.1.dist-info/LICENSE
+      708  2021-11-21 22:32   example_package-0.0.1.dist-info/METADATA
+       92  2021-11-21 22:32   example_package-0.0.1.dist-info/WHEEL
+       16  2021-11-21 22:32   example_package-0.0.1.dist-info/top_level.txt
+      587  2021-11-21 22:32   example_package-0.0.1.dist-info/RECORD
 ---------                     -------
      2520                     7 files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ .venv/bin/python -m build --sdist /tmp/tmpxlsv7t03/example-7
+$ /home/abravalheri/workspace/experiment-setuptools-package-data/.venv/bin/python -m build --sdist /tmp/tmphv_g937f/example-7
 running egg_info
 writing src/example_package.egg-info/PKG-INFO
 writing dependency_links to src/example_package.egg-info/dependency_links.txt
@@ -2207,13 +2213,13 @@ copying src/example_package/sub-dir/other.txt -> example-package-0.0.1/src/examp
 Writing example-package-0.0.1/setup.cfg
 Creating tar archive
 removing 'example-package-0.0.1' (and everything under it)
-* Creating virtualenv isolated environment...
-* Installing packages in isolated environment... (setuptools==58.3.0, wheel==0.37.0)
+* Creating venv isolated environment...
+* Installing packages in isolated environment... (setuptools==59.2.0, wheel==0.37.0)
 * Getting dependencies for sdist...
 * Building sdist...
 Successfully built example-package-0.0.1.tar.gz
 
-$ tar tf /tmp/tmpxlsv7t03/example-7/dist/example-package-0.0.1.tar.gz
+$ tar tf /tmp/tmphv_g937f/example-7/dist/example-package-0.0.1.tar.gz
 example-package-0.0.1/
 example-package-0.0.1/LICENSE
 example-package-0.0.1/MANIFEST.in
@@ -2263,7 +2269,7 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 +------------------------+------------------------+----------------+---------------+---------+---------+
 | True                   |                        |                | Yes           | Yes     | Yes     |
 +------------------------+------------------------+----------------+---------------+---------+---------+
-| True                   |                        | Yes            |               | Yes     | No      |
+| True                   |                        | Yes            |               | Yes     | Yes     |
 +------------------------+------------------------+----------------+---------------+---------+---------+
 | True                   |                        | Yes            | Yes           | Yes     | Yes     |
 +------------------------+------------------------+----------------+---------------+---------+---------+
@@ -2280,9 +2286,9 @@ example-package-0.0.1/src/example_package.egg-info/top_level.txt
 
 
 
-s <= i'.e'.p + m
+s <= e'.p + m
 w <= i.e'.m + e'.p
 
 
-sdist <=  not(include_package_data) and  not(exclude_package_data) and package_data or MANIFEST.in
+sdist <=  not(exclude_package_data) and package_data or MANIFEST.in
 wheel <= include_package_data and  not(exclude_package_data) and MANIFEST.in or  not(exclude_package_data) and package_data
