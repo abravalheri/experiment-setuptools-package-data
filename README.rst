@@ -57,8 +57,10 @@ and ``unzip`` commands available, and that a virtualenv was created with Python 
     $ python test.py | tee results.txt
 
 
-Results for ``setuptools==59.2.0``
+Results for ``setuptools==60.6.0``
 ==================================
+
+    *Also tested for* ``setuptools==59.2.0``
 
 After the fix implemented in pypa/setuptools#2844, ``include_package_data`` is
 supposed to work in the same way for both ``sdist`` and ``wheel``
@@ -150,6 +152,9 @@ inside directories that are not valid Python packages (e.g. missing
 ``__init__.py`` files or whose names are not valid python identifiers) [#doc1]_.
 Also have in mind that "data files" outside the package directory are no longer
 allowed [#doc2]_.
+
+Results for previous versions of setuptools can be found in the corresponding
+`git tag <https://github.com/abravalheri/experiment-setuptools-package-data/tags>`_.
 
 .. [#doc1] https://setuptools.pypa.io/en/latest/userguide/datafiles.html
 .. [#doc2] https://setuptools.pypa.io/en/latest/userguide/datafiles.html#non-package-data-files
